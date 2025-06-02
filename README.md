@@ -22,7 +22,7 @@ This is a web-based version of the classic Flappy Bird game, converted from the 
 ## Hosting Online
 
 To host this game online:
-- access the following link below
+- access the following link -->
   https://flappybird20.netlify.app/
 
 ## Technologies Used
