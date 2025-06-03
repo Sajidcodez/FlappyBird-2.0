@@ -1,6 +1,7 @@
 # Flappy Bird Web Game
 
-This is a web-based version of the classic Flappy Bird game, converted from the original Java implementation to JavaScript, HTML, and CSS for deployment. 
+- This is a web-based version of the classic Flappy Bird game, converted from the original Java implementation to JavaScript, HTML, and CSS for deployment. 
+- Original Java version --> https://github.com/Sajidcodez/FlappyBird
 
 ## Features
 
