@@ -10,6 +10,8 @@
 - Responsive design
 - Score tracking
 - Game over and restart functionality
+- Dashboard with score tracking and history.
+* WILL ADD MORE FEATURES SUCH AS DIFFICULTY LATER ON
 
 ## How to Play
 
