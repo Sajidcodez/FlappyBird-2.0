@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 #game-over {
@@ -48,4 +48,93 @@ body {
 
 .hidden {
     display: none !important;
+}
+
+/* Home Page Styles */
+#home-page {
+    width: 800px;
+    height: 600px;
+    background-color: #4FC3F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#home-page h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #FFEB3B;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #FDD835;
+    transform: scale(1.05);
+}
+
+/* Score Dashboard Styles */
+#score-dashboard {
+    width: 800px;
+    height: 600px;
+    background-color: #4FC3F7;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#score-dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#score-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.score-item {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.score-item:last-child {
+    margin-bottom: 0;
+}
+
+#back-button, #back-to-home {
+    align-self: center;
 }

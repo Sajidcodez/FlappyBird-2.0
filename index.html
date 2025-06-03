@@ -6,13 +6,33 @@
     <title>Flappy Bird Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    <div id="game-container">
+<body>
+    <!-- Home Page -->
+    <div id="home-page">
+        <h1>Flappy Bird</h1>
+        <div class="button-container">
+            <button id="start-button">Start Game</button>
+            <button id="score-button">View Scores</button>
+        </div>
+    </div>
+    
+    <!-- Score Dashboard -->
+    <div id="score-dashboard" class="hidden">
+        <h2>Your Scores</h2>
+        <div id="score-list">
+            <!-- Scores will be inserted here -->
+        </div>
+        <button id="back-button">Back to Home</button>
+    </div>
+    
+    <!-- Game Container -->
+    <div id="game-container" class="hidden">
         <canvas id="game-canvas"></canvas>
         <div id="overlay" class="hidden">
             <div id="game-over">
                 <h2>Game Over</h2>
                 <p id="final-score">Score: 0</p>
-                <p>Press SPACEBAR to restart</p>
+                <button id="back-to-home">Back to Home</button>
             </div>
         </div>
     </div>
