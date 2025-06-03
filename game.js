@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const finalScoreElement = document.getElementById('final-score');
 
-    // Set canvas dimensions to match the Java version
+    // Set canvas dimensions
     const boardWidth = 800;
-    const boardHeight = 600;
+    const boardHeight = 800;
     canvas.width = boardWidth;
     canvas.height = boardHeight;
 
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const bottomPipeImage = new Image();
     bottomPipeImage.src = 'bottompipe.png';
 
-    // Bird properties (matching Java version)
+    // Bird properties 
     const birdX = boardWidth / 8;
     const birdY = boardHeight / 2;
     const birdWidth = 32;
     const birdHeight = 26;
 
-    // Pipe properties (matching Java version)
+    // Pipe properties 
     const pipeWidth = 64;
     const pipeHeight = 512;
     
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(gameLoop);
         clearInterval(placePipeTimer);
         
-        // Set up game loop (60 FPS like Java version)
+        // Set up game loop (60 FPS)
         gameLoop = setInterval(update, 1000 / 60);
         
-        // Place pipes every 1800ms (increased from 1350ms to make pipes appear less frequently)
-        placePipeTimer = setInterval(placePipes, 1800);
+        // Pipes appear every 1600ms
+        placePipeTimer = setInterval(placePipes, 1600);
         
         // Ensure game over overlay is hidden
         overlay.classList.add('hidden');
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const pipeY = 0;
         const randomPipeY = pipeY - pipeHeight / 4 - Math.random() * (pipeHeight / 2);
-        const openingSpace = boardHeight / 3.5; // Increased from /4 to make the opening larger
+        const openingSpace = boardHeight / 3.5; // Space between top and bottom pipes
         
         // Top pipe
         const topPipe = {
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pipes.push(topPipe, bottomPipe);
     }
 
-    // Update game state (matches Java version's move method)
+    // Update game state 
     function update() {
         if (gameover) return;
         
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Check if bird passed the pipe for scoring
             if (!pipe.gotThru && bird.x > pipe.x + pipe.width) {
-                score += 0.5; // Same scoring as Java version
+                score += 0.5; 
                 pipe.gotThru = true;
             }
             
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Collision detection (exactly matches Java version)
+    // Collision detection 
     function collision(a, b) {
         return a.x < b.x + b.width &&
                a.x + a.width > b.x &&
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.classList.remove('hidden');
     }
 
-    // Draw function (matches Java version's draw method)
+    // Draw function 
     function draw() {
         // Clear canvas
         ctx.clearRect(0, 0, boardWidth, boardHeight);
