@@ -21,6 +21,7 @@
 4. Each pipe you pass gives you 1 point
 5. If you hit a pipe or the ground, the game ends
 6. Press spacebar to restart after game over
+7. New Dashboard gives player option to play again or track score
 
 ## Hosting Online
 
