@@ -3,6 +3,10 @@
 - This is a web-based version of the classic Flappy Bird game, converted from the original Java implementation to JavaScript, HTML, and CSS for deployment. 
 - Original Java version --> https://github.com/Sajidcodez/FlappyBird
 
+## Hosting Online
+To host this game online 🔗 [View Live Website](https://flappybird20.netlify.app)
+
+
 ## Features
 
 - Simple one-button gameplay (spacebar to jump)
@@ -22,12 +26,6 @@
 5. If you hit a pipe or the ground, the game ends
 6. Press spacebar to restart after game over
 7. New Dashboard gives player option to play again or track score
-
-## Hosting Online
-
-To host this game online:
-- access the following link -->
-  https://flappybird20.netlify.app/
 
 ## Technologies Used
 - HTML5 Canvas for rendering
