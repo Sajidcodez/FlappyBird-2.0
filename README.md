@@ -9,23 +9,35 @@ To host this game online 🔗 [View Live Website](https://flappybird20.netlify.a
 
 ## Features
 
-- Simple one-button gameplay (spacebar to jump)
-- Maintains the exact same game mechanics as the original Java version
-- Responsive design
-- Score tracking
-- Game over and restart functionality
-- Dashboard with score tracking and history.
-# WILL ADD MORE FEATURES SUCH AS DIFFICULTY LATER ON
+- **Multiple Game Modes**: Easy, Medium, Hard, and Infinite modes with varying difficulty levels
+- **Stage Progression System**: Progress through 5 stages by reaching score milestones (25, 50, 75, 100 points)
+- **Infinite Mode**: Play indefinitely with no stages or win condition to set the highest score possible
+- **Score Tracking**: Automatic score saving with localStorage - stores your top 10 scores with timestamps
+- **Score Dashboard**: View all your saved scores in a dedicated dashboard
+- **How to Play Guide**: In-game instructions covering all features and gameplay tips
+- **Home Page Navigation**: User-friendly interface with clear navigation between game modes, scores, and instructions
+- **Win Condition**: Reach 100 points to win the game and see a congratulations screen
+- **Responsive Design**: Works smoothly on different screen sizes
+- **Game Over Screen**: Shows your final score with option to return home
 
 ## How to Play
 
 1. Open `index.html` in a web browser
-2. Press the spacebar to make the bird jump
-3. Navigate through the pipes without hitting them
-4. Each pipe you pass gives you 1 point
-5. If you hit a pipe or the ground, the game ends
-6. Press spacebar to restart after game over
-7. New Dashboard gives player option to play again or track score
+2. Select your preferred game mode:
+   - **Easy/Medium/Hard**: Progress through stages by reaching score milestones
+   - **Infinite**: Play indefinitely to set the highest score possible
+3. Press the spacebar to make the bird jump
+4. Navigate through the pipes without hitting them
+5. Earn 1 point for each pipe you pass through
+6. **Regular Modes**: Advance through stages and reach 100 points to win!
+7. **Infinite Mode**: Keep playing to beat your high score
+8. When you game over or win, return to home and check your scores in the dashboard
+
+### Difficulty Levels
+- **Easy**: Slower pipes, longer delays between obstacles
+- **Medium**: Standard gameplay speed
+- **Hard**: Faster pipes, shorter delays between obstacles
+- **Infinite**: No stages, no win condition - play as long as you can!
 
 ## Technologies Used
 - HTML5 Canvas for rendering
