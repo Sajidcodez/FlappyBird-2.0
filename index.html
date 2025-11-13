@@ -13,6 +13,50 @@
         <div class="button-container">
             <button id="start-button">Start Game</button>
             <button id="score-button">View Scores</button>
+            <button id="how-to-play-button">How to Play</button>
+        </div>
+    </div>
+    
+    <!-- How to Play -->
+    <div id="how-to-play" class="hidden">
+        <h2>How to Play</h2>
+        <div class="instructions-content">
+            <p><strong>Objective:</strong> Guide the bird through the pipes without hitting them.</p>
+            <p><strong>Controls:</strong> Press SPACEBAR to make the bird jump and flap its wings.</p>
+            <p><strong>Scoring:</strong> Earn 1 point for each pipe you pass through.</p>
+            
+            <p><strong>Game Modes:</strong></p>
+            <ul>
+                <li><strong>Easy:</strong> Slower game speed with longer delays between pipes</li>
+                <li><strong>Medium:</strong> Normal game speed</li>
+                <li><strong>Hard:</strong> Faster game speed with shorter delays between pipes</li>
+                <li><strong>Infinite:</strong> Play indefinitely with no stages or win condition. Set the highest score possible!</li>
+            </ul>
+            
+            <p><strong>Stages (Regular Modes Only):</strong></p>
+            <ul>
+                <li>Stage 1: 0-24 points</li>
+                <li>Stage 2: 25-49 points</li>
+                <li>Stage 3: 50-74 points</li>
+                <li>Stage 4: 75-99 points</li>
+                <li>Stage 5: 100 points - YOU WIN!</li>
+            </ul>
+            
+            <p><strong>Score Tracking:</strong> Your scores are automatically saved and displayed in the "View Scores" section. Top 10 scores are kept with timestamps.</p>
+            
+            <p><strong>Tips:</strong> Time your jumps carefully and stay centered between the pipes! In Infinite mode, aim for the highest score possible!</p>
+            <button id="back-to-home-instructions">Back to Home</button>
+        </div>
+    </div>
+    
+    <!-- Difficulty Selection -->
+    <div id="difficulty-page" class="hidden">
+        <h2>Select Difficulty</h2>
+        <div class="difficulty-container">
+            <button id="easy-button" class="difficulty-btn">Easy</button>
+            <button id="medium-button" class="difficulty-btn">Medium</button>
+            <button id="hard-button" class="difficulty-btn">Hard</button>
+            <button id="infinite-button" class="difficulty-btn">Infinite</button>
         </div>
     </div>
     
@@ -28,11 +72,22 @@
     <!-- Game Container -->
     <div id="game-container" class="hidden">
         <canvas id="game-canvas"></canvas>
+        <div id="stage-display">
+            <span id="stage-text">Stage: 1</span>
+        </div>
         <div id="overlay" class="hidden">
             <div id="game-over">
                 <h2>Game Over</h2>
                 <p id="final-score">Score: 0</p>
                 <button id="back-to-home">Back to Home</button>
+            </div>
+        </div>
+        <div id="win-overlay" class="hidden">
+            <div id="win-screen">
+                <h2>Congratulations!</h2>
+                <p>You've Won the Game!</p>
+                <p id="final-stage-score">Final Score: 0</p>
+                <button id="back-to-home-win">Back to Home</button>
             </div>
         </div>
     </div>

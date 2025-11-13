@@ -138,3 +138,123 @@ button:hover {
 #back-button, #back-to-home {
     align-self: center;
 }
+
+/* How to Play Styles */
+#how-to-play {
+    width: 800px;
+    height: 600px;
+    background-color: #4FC3F7;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+#how-to-play h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.instructions-content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.instructions-content p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.instructions-content ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.instructions-content li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+#back-to-home-instructions {
+    align-self: center;
+}
+
+/* Difficulty Selection Styles */
+#difficulty-page {
+    width: 800px;
+    height: 600px;
+    background-color: #4FC3F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#difficulty-page h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.difficulty-btn {
+    width: 200px;
+    padding: 20px 40px;
+    font-size: 22px;
+}
+
+/* Stage Display */
+#stage-display {
+    display: none;
+}
+
+/* Win Screen Styles */
+#win-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#win-screen {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+#win-screen h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#win-screen p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
